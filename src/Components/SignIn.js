@@ -46,14 +46,14 @@ export default function SignIn() {
             });
     };
 
-    // LifeCycle method, which will run, and do auto sign in, is the user is known (uncomment to enable autosignin)
+    // LifeCycle method, which will run, and do auto sign in, is the user is known
     useEffect(() => {
         clearInputs();
-        // firebase.auth().onAuthStateChanged((user) => {
-        //     if (user) {
-        //         history.push("/stories-menu");
-        //     }
-        // });
+        firebase.auth().onAuthStateChanged((user) => {
+            if (user) {
+                history.push("/stories-menu");
+            }
+        });
     }, []);
 
     return (
