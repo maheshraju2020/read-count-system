@@ -10,16 +10,16 @@ The offline one is quite simple, an array is maintained for each story, and when
 
 The Live Watch Counting, is also done implementing arrays, when a user clicks on the card of a story, his username is added to the live_watching array of that particular story, and when the user clicks the back button, we detect the un-mount of the react component and remove the current-user's mail-id from the live_watching array, thus maintaining the live-watch counter.
 
-In live watch counter, a situation arises, where the user might close the current tab of the browser, or close the whole browser, and this might lead to problems as we cant detect component un-mount here, and the user's contribution will be continued in the live watch counter. So, in order to handle this, I used <b>beforeunload<b> function to detect such conditions and update the database.
+In live watch counter, a situation arises, where the user might close the current tab of the browser, or close the whole browser, and this might lead to problems as we cant detect component un-mount here, and the user's contribution will be continued in the live watch counter. So, in order to handle this, I used <b> beforeunload </b> function to detect such conditions and update the database.
 
 ## Some Screenshots
 
-![One](./Images/One.png)
+![One](./Images/one.png)
 
-![Two](./Images/Two.png)
+![Two](./Images/two.png)
 
-![Three](./Images/Three.png)
+![Three](./Images/three.png)
 
-![Four](./Images/Four.png)
+![Four](./Images/four.png)
 
 Also, the couple of stories used in this webapp, is randomly picked through google search.
