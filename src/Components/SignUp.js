@@ -25,11 +25,8 @@ export default function SignUp() {
         firebase
             .auth()
             .createUserWithEmailAndPassword(email, password)
-            .then(() => {
-                const db = firebase.firestore();
-                db.collection("users").doc(email).set({ storiesViewed: [] });
-            })
             .catch((err) => {
+                //Displaying various errors incase their is an error in authenticating.
                 switch (err.code) {
                     case "auth/invalid-email":
                     case "auth/email-already-in-use":
@@ -43,6 +40,7 @@ export default function SignUp() {
                 }
             });
     };
+    // LifeCycle method, which will run, and do auto sign in, is the user is known
     useEffect(() => {
         clearInputs();
         firebase.auth().onAuthStateChanged((user) => {

@@ -19,6 +19,14 @@
     width: 40%;
     background: blueviolet;
 }
+#leftPortionTitle {
+    font-size: 70px;
+    text-align: center;
+    color: white;
+    font-family: cursive;
+    text-decoration: underline;
+    margin-top: 160px;
+}
 #FormPortion {
     height: 100%;
     width: 60%;

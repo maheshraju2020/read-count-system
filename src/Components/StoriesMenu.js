@@ -8,10 +8,12 @@ export default function StoriesMenu() {
     const [StoryList, UpdateList] = useState([{ viewers: [], live: [] }]);
     const email = firebase.auth().currentUser.email;
 
+    // Lifecycle method to display all stories when the component mounts.
     useEffect(() => {
         displayAllStories();
     }, []);
 
+    // Function to display all stories
     function displayAllStories() {
         firebase
             .firestore()
@@ -27,6 +29,7 @@ export default function StoriesMenu() {
             });
     }
 
+    // Function to display already seen stories to user
     function displaySeenStories() {
         firebase
             .firestore()
@@ -44,6 +47,8 @@ export default function StoriesMenu() {
                 UpdateList(stories);
             });
     }
+
+    // Function to display those stories that the user has not yet seen.
     function displayNewStories() {
         firebase
             .firestore()

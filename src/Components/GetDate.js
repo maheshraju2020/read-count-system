@@ -1,3 +1,5 @@
+//Will return Today's date in this format, September 14,2020 06:00
+
 export default function getTodaysDate() {
     const months = [
         "January",

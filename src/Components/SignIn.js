@@ -29,6 +29,7 @@ export default function SignIn() {
                 history.push("/stories-menu");
             })
             .catch((err) => {
+                //Displaying various errors incase their is an error in authenticating.
                 switch (err.code) {
                     case "auth/invalid-email":
                     case "auth/user-disabled":
@@ -45,6 +46,7 @@ export default function SignIn() {
             });
     };
 
+    // LifeCycle method, which will run, and do auto sign in, is the user is known
     useEffect(() => {
         clearInputs();
         firebase.auth().onAuthStateChanged((user) => {

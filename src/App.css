@@ -2,3 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    background: rgba(177, 56, 0, 0.466);
+}

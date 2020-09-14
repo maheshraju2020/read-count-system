@@ -40,12 +40,13 @@ export default function StoryPage(props) {
         });
     }, []);
 
+    // This lifecycle hook will update the total viewers count, live viewers count, and get the story to display from the firestore
     useEffect(() => {
-        console.log(props.location.state);
         if (!props.location.state) {
             history.goBack();
         }
         const email = firebase.auth().currentUser.email;
+
         firebase
             .firestore()
             .collection("stories")
@@ -53,6 +54,7 @@ export default function StoryPage(props) {
             .get()
             .then((story) => {
                 const curStory = story.data();
+                //Updating the total viewers count
                 if (!curStory["viewers"].includes(email)) {
                     firebase
                         .firestore()
@@ -62,6 +64,7 @@ export default function StoryPage(props) {
                             viewers: [...curStory["viewers"], email],
                         });
                 }
+                //Checking if the user has just refreshed the page, or is he a new user, to update live user count.
                 if (!curStory["live"].includes(email)) {
                     firebase
                         .firestore()
@@ -73,11 +76,11 @@ export default function StoryPage(props) {
                 }
             })
             .then(() =>
+                //getting the story and displaying
                 firebase
                     .firestore()
                     .collection("stories")
                     .onSnapshot((oberver) => {
-                        console.log(oberver);
                         let notes = {};
                         oberver.docs.map((cur) => {
                             const data = cur.data();

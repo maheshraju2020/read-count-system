@@ -9,6 +9,7 @@ export default function NewStoryPage() {
     const [title, updateTitle] = useState("");
     const [story, updateStory] = useState("");
 
+    // updates the new story in the database
     function storySubmitter() {
         const username = firebase.auth().currentUser.email.split("@")[0];
         const db = firebase.firestore();

@@ -5,7 +5,9 @@ import "./CSS/LoggingTemplate.css";
 export default function LoggingTemplate(props) {
     return (
         <div id="MainCard">
-            <div id="LeftPortion"></div>
+            <div id="LeftPortion">
+                <div id="leftPortionTitle">Read Amazing Stories</div>
+            </div>
             <div id="FormPortion">
                 <div id="PageSwitcher">
                     <NavLink
