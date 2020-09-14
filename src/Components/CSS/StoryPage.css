@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#StoryPortion {
+    display: flex;
+}
+
+#StoryLeftPortion {
+    background: #f1da9f;
+    height: 100vh;
+    overflow: auto;
+    box-sizing: border-box;
+    width: 80%;
+}
+
+#header {
+    text-align: center;
+}
+
+#StoryTitle {
+    padding-top: 20px;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#Author {
+    font-size: 25px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px 50px;
+}
+
+#PostedOn {
+    font-size: 20px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px 50px;
+}
+
+#story {
+    margin: 40px;
+    line-height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    /* overflow: auto; */
+}
+
+#StoryRightPortion {
+    width: 20%;
+    background: #c7bca5;
+    border-left: 3px solid black;
+}
+
+#TotalViews {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    margin-top: 120px;
+    padding: 20px;
+    text-align: center;
+    background: rgb(224, 224, 224);
+}
+#storyViewsCount {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 70px;
+}
+#storyViewsText {
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+#LiveReads {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    background: rgb(224, 224, 224);
+}
+#LiveCount {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 70px;
+}
+#LiveText {
+    margin-top: 10px;
+    font-size: 22px;
+}
+#backButton {
+    position: fixed;
+    padding: 20px 40px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#backButton:hover {
+    transform: scale(0.8);
+    background: #eec55d;
+}

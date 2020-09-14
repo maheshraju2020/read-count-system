@@ -1,0 +1,60 @@
+#MainCard {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 540px;
+    width: 1160px;
+    box-shadow: 18px 18px 40px 10px rgba(0, 0, 0, 0.42);
+    border: 3px solid black;
+    display: flex;
+}
+
+#LeftPortion {
+    flex: 1;
+    height: 100%;
+    width: 40%;
+    background: blueviolet;
+}
+#FormPortion {
+    height: 100%;
+    width: 60%;
+    background: rgb(255, 160, 72, 0.85);
+}
+
+#PageSwitcher {
+    margin: 10px;
+    float: right;
+    width: 212px;
+    display: flex;
+}
+
+.SwitchItem {
+    background-color: #9aaec7;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    display: inline-block;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ActiveSwitchItem {
+    background-color: rgb(27, 80, 255);
+    color: white;
+}
+
+.SwitchItem:first-child {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.SwitchItem:last-child {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}

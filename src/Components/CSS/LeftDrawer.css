@@ -1,0 +1,84 @@
+#LeftDrawer {
+    width: 25%;
+    background: rgb(170, 166, 166);
+    user-select: none;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    border-right: 7px solid black;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
+    z-index: 5;
+}
+
+#username {
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    background: rgb(0, 38, 255);
+    border-bottom: 4px solid black;
+}
+
+#NotesMenu {
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.notesOption:last-child {
+    border-bottom: 2px solid black;
+}
+.notesOption {
+    padding: 20px;
+    border-top: 2px solid black;
+    background: rgb(224, 224, 224);
+    cursor: pointer;
+}
+.notesOption:active {
+    transform: scale(0.9);
+}
+.notesOption:hover {
+    background: rgb(179, 179, 179);
+}
+
+#NewNote {
+    margin-top: 20px;
+    height: 65px;
+    display: flex;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    background: rgb(224, 224, 224);
+    cursor: pointer;
+}
+
+#NewNote:hover {
+    background: rgb(179, 179, 179);
+}
+#NewNote:active {
+    transform: scale(0.9);
+}
+#plusIcon {
+    margin-left: 40px;
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+}
+#NewNoteText {
+    padding: 17px;
+    font-size: 20px;
+}
+
+#SignOutButton {
+    margin-top: 20px;
+    color: White;
+    font-size: 22px;
+    text-align: center;
+    padding: 20px;
+    background: red;
+    cursor: pointer;
+}
+
+#SignOutButton:hover {
+    background: darkred;
+}

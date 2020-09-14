@@ -1,0 +1,86 @@
+#JustForBackground {
+    height: 100vh;
+    background: rgba(177, 56, 0, 0.466);
+}
+#MainDiv {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 540px;
+    width: 860px;
+    box-shadow: 20px 20px 30px 10px rgba(0, 0, 0, 0.42);
+    border: 3px solid black;
+    background: rgb(144, 170, 255);
+}
+
+#divTitle {
+    background: blue;
+    color: white;
+    font-size: 40px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 3px solid black;
+}
+
+#titleInput {
+    display: flex;
+    margin: 20px 10px 5px 10px;
+    padding: 10px;
+}
+
+#TitleName {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#storyTitle {
+    margin: 0 20px;
+    background: rgb(144, 170, 255);
+    font-size: 30px;
+    width: 500px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+#storyArea {
+    margin: 10px 2px;
+    width: 850px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    font-size: 20px;
+    height: 300px;
+    resize: none;
+    box-sizing: border-box;
+    outline: none;
+    border: 2px solid black;
+    background: rgb(209, 209, 209);
+}
+
+#submitButton {
+    background: red;
+    padding: 15px 20px;
+    font-size: 25px;
+    cursor: pointer;
+    width: 150px;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    outline: none;
+    border-radius: 15px;
+    margin: -5px 350px;
+}
+
+#submitButton:hover {
+    background: darkred;
+}
+
+#submitButton:active {
+    transform: scale(0.85);
+}

@@ -1,0 +1,67 @@
+.card {
+    background: #eeeaea;
+    height: 120px;
+    width: 750px;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: #727272 10px 10px 25px;
+    position: relative;
+    transition: all 400ms;
+    text-decoration: none;
+    color: black;
+    background: #f8a7d8;
+    background: -webkit-linear-gradient(top left, #e5f78c, #d6e689);
+    background: -moz-linear-gradient(top left, #e5f78c, #d6e689);
+    background: linear-gradient(to bottom right, #e5f78c, #d6e689);
+    user-select: none;
+    cursor: pointer;
+    font-family: sans-serif;
+    display: flex;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.card:active {
+    transform: scale(0.85);
+}
+
+.card:hover {
+    background: -webkit-linear-gradient(top left, #e5f78c, #d6e689);
+    background: -moz-linear-gradient(top left, #e5f78c, #d6e689);
+    background: linear-gradient(to bottom right, #d0eb49, #9cb137);
+}
+
+.details {
+    width: 80%;
+}
+
+.CardTitle {
+    font-size: 37px;
+    font-variant: small-caps;
+    margin: 5px 20px;
+}
+.CardTime {
+    font-size: 18px;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+.CardAuthor {
+    font-size: 18px;
+    margin: 5px 25px;
+}
+.views {
+    width: 20%;
+}
+
+.CardTotViews {
+    margin-top: 12px;
+    margin-left: 2px;
+    font-size: 18px;
+}
+.CardLive {
+    font-size: 18px;
+    margin: 5px 2px;
+}
+.seen {
+    margin: 15px 100px;
+}

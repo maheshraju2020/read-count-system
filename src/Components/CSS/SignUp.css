@@ -1,0 +1,79 @@
+#SignUp {
+    position: absolute;
+    font-family: "Montserrat", sans-serif;
+    margin: 120px 640px;
+}
+
+#SignUpTitle {
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#signUpForm {
+    margin-top: 25px;
+}
+
+.signUpPageInput {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 5px 45px 30px;
+    width: 400px;
+    border-radius: 8px;
+    font-size: 20px;
+}
+.signUpPageLabel {
+    font-size: 22px;
+    margin: 0px 58px;
+}
+#SignUpbutton {
+    margin: 2px 190px;
+    border-radius: 20px;
+    border: 1px solid #273cff;
+    background-color: #273cff;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 24px;
+    width: 140px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    cursor: pointer;
+    outline: none;
+}
+
+#SignUpbutton:active {
+    transform: scale(0.8);
+}
+
+#SignUpbutton:hover {
+    outline: none;
+    background-color: #001aff;
+}
+
+#signInMessage {
+    position: absolute;
+    margin: 15px 163px;
+    text-decoration: None;
+    font-size: 16px;
+    color: #21016b;
+}
+
+#emailError {
+    font-size: 16px;
+    text-align: center;
+    position: fixed;
+    margin: 210px -35px;
+    color: white;
+    background: rgba(255, 0, 0, 0.836);
+}
+
+#passwordError {
+    font-size: 16px;
+    position: fixed;
+    margin: 130px -35px;
+    color: white;
+    background: rgba(255, 0, 0, 0.836);
+}
