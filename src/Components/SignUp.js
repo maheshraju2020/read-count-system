@@ -25,6 +25,9 @@ export default function SignUp() {
         firebase
             .auth()
             .createUserWithEmailAndPassword(email, password)
+            .then(() => {
+                history.push("/stories-menu");
+            })
             .catch((err) => {
                 //Displaying various errors incase their is an error in authenticating.
                 switch (err.code) {
@@ -40,14 +43,14 @@ export default function SignUp() {
                 }
             });
     };
-    // LifeCycle method, which will run, and do auto sign in, is the user is known
+    // LifeCycle method, which will run, and do auto sign in, is the user is known (uncomment to enable autosignin)
     useEffect(() => {
         clearInputs();
-        firebase.auth().onAuthStateChanged((user) => {
-            if (user) {
-                history.push("/stories-menu");
-            }
-        });
+        // firebase.auth().onAuthStateChanged((user) => {
+        //     if (user) {
+        //         history.push("/stories-menu");
+        //     }
+        // });
     }, []);
     return (
         <div>

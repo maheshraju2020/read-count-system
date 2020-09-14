@@ -12,6 +12,7 @@
 
 #signInForm {
     margin-top: 25px;
+    user-select: none;
 }
 
 .signInPageInput {

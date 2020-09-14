@@ -26,7 +26,6 @@ export default function StoryPage(props) {
     const storyCountJsx = (
         <div id="storyViewsCount">{story["viewers"].length}</div>
     );
-
     // This will handle the case when the user abruptly closes the tab or the browser (updating live user count).
     useEffect(() => {
         window.addEventListener("beforeunload", () => {
@@ -35,7 +34,7 @@ export default function StoryPage(props) {
                 .collection("stories")
                 .doc(props.location.state["id"])
                 .update({
-                    live: [...props.location.state["live"]],
+                    live: props.location.state["live"],
                 });
         });
     }, []);
@@ -89,6 +88,13 @@ export default function StoryPage(props) {
                             }
                             return null;
                         });
+                        let newViewList = [];
+                        for (let i = 0; i < notes["live"].length; i++) {
+                            if (notes["live"][i] !== email) {
+                                newViewList.push(notes["live"][i]);
+                            }
+                        }
+                        props.location.state["live"] = newViewList;
                         updateStory(notes);
                     })
             );

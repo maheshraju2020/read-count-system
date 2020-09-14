@@ -5,6 +5,7 @@
 
 #StoryPortion {
     display: flex;
+    user-select: none;
 }
 
 #StoryLeftPortion {

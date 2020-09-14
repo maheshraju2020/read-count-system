@@ -28,7 +28,7 @@ export default function LeftDrawer(props) {
                 }}
             >
                 <img id="plusIcon" alt="" srcset={plus} />
-                <div id="NewNoteText">New Note</div>
+                <div id="NewNoteText">New Story</div>
             </div>
             <div
                 id="SignOutButton"
