@@ -22,7 +22,4 @@ In live watch counter, a situation arises, where the user might close the curren
 
 ![Four](./Images/four.png)
 
-You can view this webapp here,
-https://read-count-sys.herokuapp.com/
-
 Also, the couple of stories used in this webapp, is randomly picked through google search.
